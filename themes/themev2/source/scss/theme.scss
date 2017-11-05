@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 @import "_partial/normalize";
+@import "_partial/variables"; 
 @import "_partial/base";
 @import "_partial/header";
 @import "_partial/home-post-list";
@@ -10,6 +11,7 @@
 @import "_partial/mq";
 @import "_partial/copyright";
 @import "_partial/highlight";
+@import "_partial/banner"; 
 
 @font-face {
     font-family: 'sourcesanspro';

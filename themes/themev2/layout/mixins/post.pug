@@ -1,7 +1,14 @@
+mixin renderBanner() 
+    .container.banner 
+        h1
+            != config.banner_title
+        h3
+            != config.banner_description
+
 mixin postInfo(item)
-    .post-info
-        a
-        != full_date(item.date, config.date_format)
+    .post-info.text-center
+        if !item.hide_date
+            != full_date(item.date, config.date_format)
         if item.from && (is_home() || is_post())
             a.post-from(href=item.from, target='_blank', title=item.from)
                 != __('translate_original')
@@ -14,6 +21,7 @@ mixin postTitle(title)
 
 //- Index Page
 mixin posts()
+    +renderBanner()
     ul.home.post-list
         - page.posts.each(function (item) {
             li.post-list-item
@@ -50,7 +58,7 @@ mixin postList()
 mixin post(item)
     .post
         article.post-block
-            h1.post-title
+            h1.post-title.text-center
                 +postTitle(item.title)
             +postInfo(item)
             .post-content

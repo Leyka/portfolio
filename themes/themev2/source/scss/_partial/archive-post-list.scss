@@ -15,11 +15,11 @@
     .post-title-link {
         display: block;
         margin-left: 125px;
-        color: #42b983;
+        color: $main-color;
         word-wrap: break-word;
         &:hover {
             border-bottom: 0;
-            color: #267B54;
+            color: $main-color;
         }
     }
 

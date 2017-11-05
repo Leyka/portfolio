@@ -74,18 +74,19 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: themev2
 theme_config:
-  logo:
   google_analytics: UA-12345678-9
   copyright:
-    since: 2016
-    name: John Doe
-    url: https://www.example.org/john-doe
+    since: 2017
   menu:
     About: /about
     Archives: /archives
     GitHub: https://github.com/leyka
 
+# Banner 
+banner_title: Hey, I'm Skan 
+banner_description: I'm a backend Python/Ruby/Node developper.
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
