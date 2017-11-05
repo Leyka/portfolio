@@ -3,7 +3,7 @@ meta(name='X-UA-Compatible', content='IE=edge')
 
 title
     block site_title
-        = config.title
+        = config.title_tag
 
 block description
     meta(name='description', content=config.description ? config.description : __('meta_description'))
